@@ -25,7 +25,7 @@ jobs:
 
       # Build the Java application
       - name: Build with Maven
-        run: mvn install -f Java-Proect_sonarQube/MyWebApp/pom.xml
+        run: mvn -B clean package --file pom.xml
 
       # Run tests
       - name: Run tests
